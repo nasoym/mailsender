@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 receipient="${1:-""}"
 subject="${2:-""}"
