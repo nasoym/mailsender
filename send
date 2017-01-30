@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+receipient="${1:-""}"
+subject="${2:-""}"
+
+cat - | mailx -s "${subject}" ${receipient}
+

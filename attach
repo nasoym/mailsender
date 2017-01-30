@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+receipient="${1:-""}"
+subject="${2:-""}"
+tmp_file="$(mktemp)"
+
+cat - >${tmp_file}
+
+echo " " | mailx -s "${subject}" -a ${tmp_file} ${receipient}
+
+rm -rf ${tmp_file}
+
+
